@@ -2,12 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/main.css">
     <title>React Support Chat</title>
   </head>
   <body>
-    <main id="app">
+    <main id="app"></main>
+    <aside class="convoList">
+      <div class="convoList--conversation">
 
-    </main>
+      </div>
+    </aside>
+    <section class="activeConvo">
+      <form class="activeConvo__chat" action="index.html" method="post">
+        <textarea class="activeConvo__chat--input" rows="8" cols="80"></textarea>
+      </form>
+    </section>
   </body>
   <script type="text/javascript" src="./build/bundle.js"></script>
 </html>

@@ -1,0 +1,33 @@
+.navbar {
+  background-color: #bc8bed;
+  color: white;
+  font-family: arial;
+  width: 100%;
+  list-style-type: none;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__items {
+  display: inline-block;
+  padding-top: 15px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.navbar__items--appName {
+  font-family: helvetica;
+  font-size: 25px;
+}
+
+.navbar__right {
+  margin-left: 350px;
+}
+
+.navbar__avatar {
+  height: 30px;
+  width: 30px;
+  padding-top: 15px;
+  margin-right: -5px;
+}
