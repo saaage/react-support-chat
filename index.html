@@ -12,8 +12,13 @@
     <aside class="convoList">
       <nav class="convoList__navbar">
         <ul class="convoList__navbar--list">
-          <li class="convoList__navbar--listitem">Open</li>
-          <li class="convoList__navbar--listitem">Date</li>
+          <li class="convoList__navbar--listitem">
+            Open
+            <div class="arrow-down"></div>
+          </li>
+          <li class="convoList__navbar--listitem convoList__navbar--listitemright">Date
+            <div class="arrow-down"></div>
+          </li>
         </ul>
       </nav>
       <div class="convoList--conversation">
@@ -25,8 +30,8 @@
       <nav class="activeConvo__navbar">
         <ul class="activeConvo__navbar--list">
           <li class="activeConvo__navbar--listitem">Unassigned</li>
-          <li class="activeConvo__navbar--listitem">White Circle</li>
-          <li class="activeConvo__navbar--listitem">Close</li>
+          <li class="activeConvo__navbar--listitem activeConvo__navbar--clientname">White Circle</li>
+          <li class="activeConvo__navbar--listitem activeConvo__navbar--listitemright">Close</li>
         </ul>
       </nav>
       <form class="activeConvo__chat" action="index.html" method="post">
