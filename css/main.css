@@ -1,33 +1,82 @@
-.navbar {
+/*--------userNavbar styles--------*/
+/* <nav> */
+.userNavbar {
   background-color: #bc8bed;
   color: white;
-  font-family: arial;
   width: 100%;
-  list-style-type: none;
   height: 55px;
+}
+
+/* <ul> */
+.userNavbar__list {
+  font-family: arial;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar__items {
+/* <li> */
+.userNavbar__listitems {
   display: inline-block;
   padding-top: 15px;
   margin-left: 10px;
   margin-right: 20px;
 }
 
-.navbar__items--appName {
+/* <li> */
+.userNavbar__listitems--appName {
   font-family: helvetica;
   font-size: 25px;
 }
 
-.navbar__right {
+/* <> */
+.userNavbar__right {
   margin-left: 350px;
 }
 
-.navbar__avatar {
+/* <> */
+.userNavbar__avatar {
   height: 30px;
   width: 30px;
   padding-top: 15px;
   margin-right: -5px;
+}
+
+/*--------Conversation List Styles--------*/
+/* <aside> */
+.convoList {
+
+}
+
+/* <nav> */
+.convoList__navbar {
+
+}
+
+/* <ul> */
+.convoList__navbar--list {
+  list-style-type: none;
+}
+
+/* <li> */
+.convoList__navbar--listitem {
+  display: inline-block;
+  color: #bc8bed;
+  font-family: arial;
+}
+
+/*--------Active Conversation Styles--------*/
+/* <section> */
+.activeConvo {
+
+}
+
+/* <form> */
+.activeConvo__chat {
+
+}
+
+/* <textarea> */
+.activeConvo__chat--input {
+
 }
