@@ -29,12 +29,12 @@
   font-size: 25px;
 }
 
-/* <> */
+/* <li> */
 .userNavbar__right {
   margin-left: 350px;
 }
 
-/* <> */
+/* <img> */
 .userNavbar__avatar {
   height: 30px;
   width: 30px;
@@ -45,7 +45,12 @@
 /*--------Conversation List Styles--------*/
 /* <aside> */
 .convoList {
-
+  display: inline-block;
+  vertical-align: top;
+  height: 800px;
+  border: .5px solid;
+  width: 33%;
+  margin-right: -8px;
 }
 
 /* <nav> */
@@ -68,15 +73,27 @@
 /*--------Active Conversation Styles--------*/
 /* <section> */
 .activeConvo {
-
+  display: inline-block;
+  height: 800px;
+  width: 67%;
+  margin-left: 0px;
+  border: .5px solid;
+  position: relative;
 }
 
 /* <form> */
 .activeConvo__chat {
-
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  margin-left: 50px;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 25px;
 }
 
 /* <textarea> */
 .activeConvo__chat--input {
-
+  width: 90%;
+  height: 95%;
 }
