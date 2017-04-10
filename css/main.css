@@ -3,21 +3,33 @@
 }
 
 html {
-  height: 100%;
-}
-
-.body {
-  display: flex;
   height: 95%;
 }
 
+.body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatcontainer {
+  display: flex;
+  flex: 1;
+}
+
 /*--------userNavbar styles--------*/
+
+/* <div> */
+.userNavbarContainer {
+  display: flex;
+}
+
 /* <nav> */
 .userNavbar {
   background-color: var(--IntercomPurple);
   color: white;
-  width: 100%;
-  height: 55px;
+  flex: 1;
+  display: flex;
 }
 
 /* <ul> */
@@ -26,6 +38,14 @@ html {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  flex: 1;
+  display: flex;
+}
+
+/* <li> */
+.userNavbar__list li:last-child {
+  text-align: center;
+  flex: 3;
 }
 
 /* <li> */
@@ -34,17 +54,14 @@ html {
   padding-top: 15px;
   margin-left: 10px;
   margin-right: 20px;
+  flex: 1;
 }
 
 /* <li> */
 .userNavbar__listitems--appName {
   font-family: helvetica;
   font-size: 25px;
-}
-
-/* <li> */
-.userNavbar__right {
-  margin-left: 350px;
+  flex: 1;
 }
 
 /* <img> */
@@ -52,7 +69,6 @@ html {
   height: 30px;
   width: 30px;
   padding-top: 15px;
-  margin-right: -5px;
 }
 
 /*--------Conversation List Styles--------*/
@@ -113,9 +129,15 @@ html {
 /*--------Active Conversation Styles--------*/
 
 /* <div> */
-.activeConvo__div {
+.activeConvo__chat {
   flex: 18;
   display: flex;
+  flex-direction: column;
+}
+
+/* <div> */
+.activeConvo__chat--window {
+  flex: 4;
 }
 /* <section> */
 .activeConvo {
@@ -158,19 +180,22 @@ html {
 }
 
 /* <form> */
-.activeConvo__chat {
+.activeConvo__chatform {
   align-self: flex-end; /*align to bottom of div*/
   flex: 1;  /*extend to end of div*/
   display: flex;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  /*padding-bottom: 10px;*/
   height: 50%;
+  width: 80%;
+  display: block;
 }
 
 /* <textarea> */
 .activeConvo__chat--input {
-  height: 30%;
+  height: 90%;
   width: 80%;
-  align-self: flex-end;
+  /*align-self: flex-end;*/
   margin-left: auto;
   margin-right: auto;
 }

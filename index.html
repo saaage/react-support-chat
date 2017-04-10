@@ -7,39 +7,48 @@
   </head>
   <body class="body">
 
-    <!-- <main id="app"></main> -->
-    <aside class="convoList">
-      <nav class="convoList__navbar">
-        <ul class="convoList__navbar--list">
-          <li class="convoList__navbar--listitem">
-            Open
-            <div class="arrow-down"></div>
-          </li>
-          <li class="convoList__navbar--listitem convoList__navbar--listitemright">Date
-            <div class="arrow-down"></div>
-          </li>
-        </ul>
-      </nav>
-      <div class="convoList__conversationitems">
+    <main id="app"></main>
 
-      </div>
-    </aside>
+    <div class="chatcontainer">
 
-    <section class="activeConvo">
-      <nav class="activeConvo__navbar">
-        <ul class="activeConvo__navbar--list">
-          <li class="activeConvo__navbar--listitem">Unassigned</li>
-          <li class="activeConvo__navbar--listitem activeConvo__navbar--clientname">White Circle</li>
-          <li class="activeConvo__navbar--listitem activeConvo__navbar--listitemright">Close</li>
-        </ul>
-      </nav>
-      <div class="activeConvo__div">
-        <form class="activeConvo__chat" action="index.html" method="post">
-          <textarea class="activeConvo__chat--input"></textarea>
-        </form>
-      </div>
+      <aside class="convoList">
 
-    </section>
+        <nav class="convoList__navbar">
+          <ul class="convoList__navbar--list">
+            <li class="convoList__navbar--listitem">
+              Open
+              <div class="arrow-down"></div>
+            </li>
+            <li class="convoList__navbar--listitem convoList__navbar--listitemright">Date
+              <div class="arrow-down"></div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="convoList__conversationitems"></div>
+
+      </aside>
+
+      <section class="activeConvo">
+
+        <nav class="activeConvo__navbar">
+          <ul class="activeConvo__navbar--list">
+            <li class="activeConvo__navbar--listitem">Unassigned</li>
+            <li class="activeConvo__navbar--listitem activeConvo__navbar--clientname">White Circle</li>
+            <li class="activeConvo__navbar--listitem activeConvo__navbar--listitemright">Close</li>
+          </ul>
+        </nav>
+
+        <div class="activeConvo__chat">
+          <div class="activeConvo__chat--window"></div>
+          <form class="activeConvo__chatform" action="index.html" method="post">
+            <textarea class="activeConvo__chat--input"></textarea>
+          </form>
+        </div>
+
+      </section>
+
+    </div>
 
   </body>
   <script type="text/javascript" src="./build/bundle.js"></script>
