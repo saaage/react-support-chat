@@ -141,7 +141,7 @@ html {
 }
 /* <section> */
 .activeConvo {
-  flex: 2;
+  flex: 3;
   display: flex;
   flex-direction: column;
   border: .5px solid;
@@ -181,21 +181,30 @@ html {
 
 /* <form> */
 .activeConvo__chatform {
-  align-self: flex-end; /*align to bottom of div*/
   flex: 1;  /*extend to end of div*/
   display: flex;
   padding-top: 20px;
-  /*padding-bottom: 10px;*/
-  height: 50%;
-  width: 80%;
-  display: block;
+  width: 100%;
 }
 
 /* <textarea> */
 .activeConvo__chat--input {
-  height: 90%;
-  width: 80%;
-  /*align-self: flex-end;*/
-  margin-left: auto;
-  margin-right: auto;
+  flex: 15;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+/* <button> */
+.activeConvo__chat--sendbutton {
+  flex: 1;
+  margin-right: 20px;
+  height: 20%;
+  display: inline-block;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  margin-left: 3px;
 }
