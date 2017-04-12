@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>React Support Chat</title>
   </head>
@@ -9,23 +10,34 @@
 
     <main id="app"></main>
 
-    <div class="chatcontainer">
+    <div class="interfaceContainer">
 
-      <aside class="convoList">
+      <aside class="conversations">
 
-        <nav class="convoList__navbar">
-          <ul class="convoList__navbar--list">
-            <li class="convoList__navbar--listitem">
+        <nav class="conversations__navbar">
+          <ul class="conversations__navbar--list">
+            <li class="conversations__navbar--listitem">
               Open
               <div class="arrow-down"></div>
             </li>
-            <li class="convoList__navbar--listitem convoList__navbar--listitemright">Date
+            <li class="conversations__navbar--listitem conversations__navbar--listitemright">Date
               <div class="arrow-down"></div>
             </li>
           </ul>
         </nav>
 
-        <div class="convoList__conversationitems"></div>
+        <div class="conversations__listcontainer">
+          <ul class="conversations__list">
+            <li class="conversations__listitem">
+
+              <input class="conversations__listitem--checkbox" type="checkbox" name="checked">
+
+              <img src="" alt="">
+
+              <span class="conversations__listitem--text">Tiffany</span>
+            </li>
+          </ul>
+        </div>
 
       </aside>
 
@@ -33,9 +45,9 @@
 
         <nav class="activeConvo__navbar">
           <ul class="activeConvo__navbar--list">
-            <li class="activeConvo__navbar--listitem">Unassigned</li>
+            <li class="activeConvo__navbar--listitem">Unassigned<div class="arrow-down"></div></li>
             <li class="activeConvo__navbar--listitem activeConvo__navbar--clientname">White Circle</li>
-            <li class="activeConvo__navbar--listitem activeConvo__navbar--listitemright">Close</li>
+            <li class="activeConvo__navbar--listitem activeConvo__navbar--listitemright"><i class="fa fa-close"></i> Close</li>
           </ul>
         </nav>
 

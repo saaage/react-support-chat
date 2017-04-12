@@ -1,18 +1,23 @@
 *{
   --IntercomPurple : RGB(135,	113,	222);
+  --AppFont: arial;
+  --UIThemeFontColor: RGB(135,	113,	222);
+  --UIThemeFontCompColor: white;
 }
 
 html {
   height: 95%;
 }
 
+/* <body> */
 .body {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.chatcontainer {
+/* <div> */
+.interfaceContainer {
   display: flex;
   flex: 1;
 }
@@ -73,7 +78,7 @@ html {
 
 /*--------Conversation List Styles--------*/
 /* <aside> */
-.convoList {
+.conversations {
   display: inline-block;
   vertical-align: top;
   border: .5px solid;
@@ -83,20 +88,20 @@ html {
 }
 
 /* <nav> */
-.convoList__navbar {
+.conversations__navbar {
   border-bottom: 1px solid gray;
   flex: 1;
 }
 
 /* <ul> */
-.convoList__navbar--list {
+.conversations__navbar--list {
   list-style-type: none;
   margin-left: 20px;
   padding-left: 0;
 }
 
 /* <li> */
-.convoList__navbar--listitem {
+.conversations__navbar--listitem {
   display: inline-block;
   color:  var(--IntercomPurple);
   font-family: arial;
@@ -104,7 +109,7 @@ html {
 }
 
 /* <li> */
-.convoList__navbar--listitemright{
+.conversations__navbar--listitemright{
   float: right;
   margin-right: 20px;
 }
@@ -122,11 +127,57 @@ html {
 }
 
 /* <div> */
-.convoList__conversationitems {
+.conversations__listcontainer {
   flex: 18;
+  display: flex;
+  flex-direction: row;
+}
+
+/* <ul> */
+.conversations__list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0;
+}
+
+/* <li> */
+.conversations__listitem {
+  border-bottom: .25px solid #E1BEE7;
+  background-color: #F3E5F5;
+  flex: 1;
+  font-family: var(--AppFont);
+  color: var(--UIThemeFontColor);
+  line-height: .5;
+  max-height: 10%;
+  min-height: 20px;
+  padding-top: 2%;
+  padding-left: 2%;
+  display: flex;
+}
+
+/* <span> */
+.conversations__listitem--text {
+  align-self: center;
+}
+
+/* <input> */
+.conversations__listitem--checkbox {
+  align-self: center;
 }
 
 /*--------Active Conversation Styles--------*/
+
+/* <section> */
+.activeConvo {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  border: .5px solid;
+}
 
 /* <div> */
 .activeConvo__chat {
@@ -138,13 +189,6 @@ html {
 /* <div> */
 .activeConvo__chat--window {
   flex: 4;
-}
-/* <section> */
-.activeConvo {
-  flex: 3;
-  display: flex;
-  flex-direction: column;
-  border: .5px solid;
 }
 
 /* <nav> */
