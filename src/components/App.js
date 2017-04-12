@@ -9,7 +9,7 @@ let Stefan = {
   userName: 'Obsidian911',
   mentions: 100,
   notifications: 200,
-  pic: './images/userimage.png'
+  pic: '../images/userimage.png'
 }
 
 class App extends React.Component {
