@@ -78,6 +78,7 @@ html {
 }
 
 /*--------Conversation List Styles--------*/
+
 /* <aside> */
 .conversations {
   display: inline-block;
@@ -148,7 +149,7 @@ html {
 /* <li> */
 .conversations__listitem {
   border-bottom: .25px solid #E1BEE7;
-  background-color: var(--UICompMainColor);
+  background-color: white;
   display: flex;
   flex: 1;
   font-family: var(--AppFont);
@@ -159,6 +160,10 @@ html {
   min-height: 45px;
   padding-top: 2%;
   padding-left: 2%;
+}
+
+.conversation__listitem--active {
+  background-color: var(--UICompMainColor);
 }
 
 /* <img> */
