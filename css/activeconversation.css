@@ -1,0 +1,138 @@
+*{
+  --AppFont: arial;
+  --UIMainColor: #1976D2;
+  --UICompMainColor: #BBDEFB;
+  --UIThemeFontColor: #1976D2;
+  --UIThemeFontCompColor: white;
+}
+
+/*--------Active Conversation Styles--------*/
+
+/* <section> */
+.activeConvo {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+    /*activeConvo has two children that will be flexing vertically - a nav and a div*/
+  border: .5px solid;
+}
+
+/* <nav> */
+.activeConvo__navbar {
+  flex: 1;
+  border-bottom: 1px solid gray;
+}
+
+/* <div> */
+.activeConvo__chat {
+  flex: 18;
+  display: flex;
+  flex-direction: column;
+    /* activeConvo__chat has two children that will be flexing vertically - a div and a form */
+}
+
+/* <div> */
+.activeConvo__chat--window {
+  flex: 4; /* flex to bottom of activeConvo__chat */
+  display: flex; /* activeConvo__chat--window will hold div children that flex horizontally */
+  border-bottom: .5px solid;
+  margin: 10px 0px 0px 0px;
+}
+
+.activeConvo__chat--conversation {
+  align-self: flex-end;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 10px 50px;
+}
+
+/* <div> */
+.activeConvo__chat--sent {
+  flex: 1; /* flex to horizontal end of activeConvo__chat--window */
+  align-self: flex-end;
+  max-width: 70%;
+}
+
+/* <div> */
+.activeConvo__chat--received {
+  flex: 1; /* flex to horizontal end of activeConvo__chat--window */
+  align-self: flex-start;
+  max-width: 70%;
+}
+
+.activeConvo__chat--messagereceived {
+  border: .5px solid #EEEEEE;
+  padding: 7px 7px;
+  border-radius: 25px;
+  background-color: #EEEEEE;
+  color: var(--UIThemeFontColor);
+  font-size: 15px;
+  font-family: arial;
+}
+
+.activeConvo__chat--messagesent {
+  border: .5px solid #90CAF9;
+  padding: 7px 7px;
+  border-radius: 25px;
+  background-color: #90CAF9;
+  color: var(--UIThemeFontColor);
+  font-family: arial;
+  font-size: 15px;
+}
+
+/* <form> */
+.activeConvo__chatform {
+  flex: 1;  /*extend to end of div*/
+  display: flex;
+  padding-top: 20px;
+  width: 100%;
+}
+
+/* <ul> */
+.activeConvo__navbar--list {
+  list-style-type: none;
+  display: flex;
+}
+
+/* <li> */
+.activeConvo__navbar--listitem {
+  display: inline-block;
+  color:  var(--UIThemeFontColor);
+  font-family: arial;
+  flex: 1;
+  text-align: center;
+}
+
+/* <li> */
+.activeConvo li:first-child {
+  text-align: left;
+}
+
+/* <li> */
+.activeConvo__navbar--list li:last-child {
+  text-align: right;
+  padding-right: 40px;
+}
+
+/* <textarea> */
+.activeConvo__chat--input {
+  flex: 15;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+/* <button> */
+.activeConvo__chat--sendbutton {
+  flex: 1;
+  margin-right: 20px;
+  height: 20%;
+  display: inline-block;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  margin-left: 3px;
+}

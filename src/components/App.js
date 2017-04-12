@@ -6,7 +6,7 @@ import React from 'react'
 import UserNavbar from './UserNavbar'
 
 let Stefan = {
-  userName: 'Obsidian911',
+  userName: 'Stefan Age',
   mentions: 100,
   notifications: 200,
   pic: '../images/userimage.png'

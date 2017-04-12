@@ -1,0 +1,66 @@
+*{
+  --AppFont: arial;
+  --UIMainColor: #1976D2;
+  --UICompMainColor: #BBDEFB;
+  --UIThemeFontColor: #1976D2;
+  --UIThemeFontCompColor: white;
+}
+
+/*--------userNavbar styles--------*/
+
+/* <div> */
+.userNavbarContainer {
+  display: flex;
+}
+
+/* <nav> */
+.userNavbar {
+  background-color: var(--UIMainColor);
+  color: white;
+  flex: 1;
+  display: flex;
+}
+
+.userNavbar__logo {
+  height: 60px;
+  width: 80px;
+}
+
+/* <ul> */
+.userNavbar__list {
+  font-family: arial;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: flex;
+}
+
+/* <li> */
+.userNavbar__list li:last-child {
+  text-align: right;
+  flex: 3;
+}
+
+/* <li> */
+.userNavbar__listitems {
+  display: inline-block;
+  padding-top: 15px;
+  margin-left: 10px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+/* <li> */
+.userNavbar__listitems--appName {
+  font-family: helvetica;
+  font-size: 25px;
+  flex: 1;
+}
+
+/* <img> */
+.userNavbar__avatar {
+  height: 30px;
+  width: 30px;
+  padding-top: 15px;
+}

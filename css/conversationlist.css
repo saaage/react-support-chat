@@ -1,0 +1,115 @@
+*{
+  --AppFont: arial;
+  --UIMainColor: #1976D2;
+  --UICompMainColor: #BBDEFB;
+  --UIThemeFontColor: #1976D2;
+  --UIThemeFontCompColor: white;
+}
+
+/*--------Conversation List Styles--------*/
+
+/* <aside> */
+.conversations {
+  display: inline-block;
+  vertical-align: top;
+  border: .5px solid;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* <nav> */
+.conversations__navbar {
+  border-bottom: 1px solid gray;
+  flex: 1;
+}
+
+/* <ul> */
+.conversations__navbar--list {
+  list-style-type: none;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+/* <li> */
+.conversations__navbar--listitem {
+  display: inline-block;
+  color:  var(--UIThemeFontColor);
+  font-family: arial;
+  margin-left: 0px;
+}
+
+/* <li> */
+.conversations__navbar--listitemright{
+  float: right;
+  margin-right: 20px;
+}
+
+/* <div> */
+.arrow-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--UIThemeFontColor);
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+/* <div> */
+.conversations__listcontainer {
+  flex: 18;
+  display: flex;
+  flex-direction: row;
+}
+
+/* <ul> */
+.conversations__list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0;
+}
+
+/* <li> */
+.conversations__listitem {
+  border-bottom: .25px solid #E1BEE7;
+  background-color: white;
+  display: flex;
+  flex: 1;
+  font-family: var(--AppFont);
+  font-size: 16px;
+  color: var(--UIThemeFontColor);
+  line-height: .5;
+  max-height: 10%;
+  min-height: 45px;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+.conversation__listitem--active {
+  background-color: var(--UICompMainColor);
+}
+
+/* <img> */
+.conversations__listitem--usericon {
+  height: 40px;
+  align-self: center;
+  margin-left: 6px;
+  margin-right: 4px;
+  width: 40px;
+}
+
+/* <span> */
+.conversations__listitem--text {
+  align-self: center;
+}
+
+/* <input> */
+.conversations__listitem--checkbox {
+  align-self: center;
+}
