@@ -8,10 +8,10 @@ module.exports = {
       path: path.resolve(__dirname, 'dist')
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: path.resolve(__dirname, "/node_modules"),
         loader: 'babel-loader?presets[]=es2015&presets[]=react'
       }
     ]
