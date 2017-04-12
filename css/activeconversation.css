@@ -37,9 +37,11 @@
   display: flex; /* activeConvo__chat--window will hold div children that flex horizontally */
   border-bottom: .5px solid;
   margin: 10px 0px 0px 0px;
+  overflow-y: auto;
 }
 
 .activeConvo__chat--conversation {
+  max-height: 90%;
   align-self: flex-end;
   display: flex;
   flex: 1;
