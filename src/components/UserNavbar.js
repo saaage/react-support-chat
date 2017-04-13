@@ -5,6 +5,8 @@
 
 import React from 'react'
 
+import NavBarStyles from ''
+
 const Navbar = ({userObj}) =>
 
         <div className="userNavbarContainer">
