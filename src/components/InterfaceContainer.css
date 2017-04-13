@@ -1,0 +1,5 @@
+/* <div> */
+.interfaceContainer {
+  display: flex;
+  flex: 1;
+}

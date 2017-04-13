@@ -1,25 +1,18 @@
-*{
+/**{
   --AppFont: arial;
   --UIMainColor: #1976D2;
   --UICompMainColor: #BBDEFB;
   --UIThemeFontColor: #1976D2;
   --UIThemeFontCompColor: white;
-}
+}*/
 
 html {
   height: 95%;
 }
 
 /* <body> */
-.body {
+body {
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-
-/* <div> */
-.interfaceContainer {
-  display: flex;
-  flex: 1;
 }

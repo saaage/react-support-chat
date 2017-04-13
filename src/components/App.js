@@ -3,6 +3,8 @@
 
 import React from 'react'
 
+import InterfaceContainer from './InterfaceContainer'
+import styles from './App.css'
 import UserNavbar from './UserNavbar'
 import userImage from 'file-loader!../images/userimage.png'
 
@@ -19,6 +21,7 @@ class App extends React.Component {
     return(
       <div>
         <UserNavbar userObj={Stefan} />
+        <InterfaceContainer />
       </div>
     )
   }

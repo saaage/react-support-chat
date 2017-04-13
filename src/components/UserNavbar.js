@@ -14,12 +14,12 @@ const Navbar = ({userObj}) =>
           <ul className={styles.userNavbar__list}>
             <li className={styles.userNavbar__listitems}>Preact</li>
             <img className={styles.userNavbar__avatar} src={userObj.pic}/>
-            <li className="userNavbar__listitems">
+            <li className={styles.userNavbar__listitems}>
               {userObj.userName}({userObj.notifications})
             </li>
-            <li className="userNavbar__listitems">Respond</li>
-            <li className="userNavbar__listitems">@Mentions({userObj.mentions})</li>
-            <li className="userNavbar__listitems userNavbar__right">Sign Out</li>
+            <li className={styles.userNavbar__listitems}>Respond</li>
+            <li className={styles.userNavbar__listitems}>@Mentions({userObj.mentions})</li>
+            <li className={styles.userNavbar__listitems}>Sign Out</li>
           </ul>
           </nav>
         </div>

@@ -1,5 +1,7 @@
-/* <div> */
+--UIThemeFontColor: #1976D2;
+
 .userNavbarContainer {
+  flex: 1;
   display: flex;
 }
 
@@ -10,11 +12,6 @@
   flex: 1;
   display: flex;
 }
-
-/*.userNavbar__logo {
-  height: 60px;
-  width: 80px;
-}*/
 
 /* <ul> */
 .userNavbar__list {
@@ -52,5 +49,6 @@
 .userNavbar__avatar {
   height: 30px;
   width: 30px;
-  padding-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
