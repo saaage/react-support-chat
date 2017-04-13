@@ -4,12 +4,13 @@
 import React from 'react'
 
 import UserNavbar from './UserNavbar'
+import userImage from 'file-loader!../images/userimage.png'
 
 let Stefan = {
   userName: 'Stefan Age',
   mentions: 100,
   notifications: 200,
-  pic: '../images/userimage.png'
+  pic: userImage
 }
 
 class App extends React.Component {

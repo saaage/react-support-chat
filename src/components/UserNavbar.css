@@ -1,13 +1,3 @@
-*{
-  --AppFont: arial;
-  --UIMainColor: #1976D2;
-  --UICompMainColor: #BBDEFB;
-  --UIThemeFontColor: #1976D2;
-  --UIThemeFontCompColor: white;
-}
-
-/*--------userNavbar styles--------*/
-
 /* <div> */
 .userNavbarContainer {
   display: flex;
@@ -15,16 +5,16 @@
 
 /* <nav> */
 .userNavbar {
-  background-color: var(--UIMainColor);
+  background-color: blue;
   color: white;
   flex: 1;
   display: flex;
 }
 
-.userNavbar__logo {
+/*.userNavbar__logo {
   height: 60px;
   width: 80px;
-}
+}*/
 
 /* <ul> */
 .userNavbar__list {

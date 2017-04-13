@@ -5,15 +5,15 @@
 
 import React from 'react'
 
-import NavBarStyles from ''
+import styles from './UserNavbar.css';
 
 const Navbar = ({userObj}) =>
 
-        <div className="userNavbarContainer">
-          <nav className="userNavbar">
-          <ul className="userNavbar__list">
-            <li className="userNavbar__listitems userNavbar__listitems--appName">Preact</li>
-            <img className="userNavbar__avatar" src={userObj.pic}/>
+        <div className={styles.userNavbarContainer}>
+          <nav className={styles.userNavbar}>
+          <ul className={styles.userNavbar__list}>
+            <li className={styles.userNavbar__listitems}>Preact</li>
+            <img className={styles.userNavbar__avatar} src={userObj.pic}/>
             <li className="userNavbar__listitems">
               {userObj.userName}({userObj.notifications})
             </li>
