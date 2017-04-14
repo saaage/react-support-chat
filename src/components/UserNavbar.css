@@ -1,8 +1,7 @@
---UIThemeFontColor: #1976D2;
-
 .userNavbarContainer {
   flex: 1;
   display: flex;
+  min-height: 50px;
 }
 
 /* <nav> */

@@ -7,7 +7,7 @@ import React from 'react'
 
 import styles from './UserNavbar.css';
 
-const Navbar = ({userObj}) =>
+const UserNavbar = ({userObj}) =>
 
         <div className={styles.userNavbarContainer}>
           <nav className={styles.userNavbar}>
@@ -25,8 +25,8 @@ const Navbar = ({userObj}) =>
         </div>
 
 
-Navbar.propTypes = {
+UserNavbar.propTypes = {
   userObj: React.PropTypes.object.isRequired
 }
 
-export default Navbar;
+export default UserNavbar;
