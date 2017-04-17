@@ -1,6 +1,6 @@
 /* <section> */
 .activeConversation {
-  flex: 4;
+  flex: 5;
   display: flex;
   flex-direction: column;
     /*activeConversation has two children that will be flexing vertically - a nav and a div*/

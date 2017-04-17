@@ -1,5 +1,6 @@
 /* <div> */
 .interfaceContainer {
   display: flex;
-  flex: 18;
+  flex-flow: row wrap;
+  /*flex: 18;*/
 }

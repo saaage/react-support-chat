@@ -1,6 +1,7 @@
 
 /* <aside> */
 .conversations {
+  height: 95%;
   display: inline-block;
   vertical-align: top;
   border: .5px solid;

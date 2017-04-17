@@ -1,12 +1,18 @@
+/* <div> */
 .userNavbarContainer {
-  flex: 1;
-  display: flex;
   min-height: 50px;
+  max-height: 55px;
+  flex: 1 100%;
+  display: inline-block;
+  /*align-self: flex-end;*/
+  display: flex;
+  /*min-height: 50px;
+  max-height: 80px;*/
 }
 
 /* <nav> */
 .userNavbar {
-  background-color: blue;
+  background-color: var(--UIMainColor);
   color: white;
   flex: 1;
   display: flex;

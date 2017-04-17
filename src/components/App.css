@@ -1,9 +1,9 @@
 
-/* All other css files will have access to the variables declared below */
+/* All other css files will have access to the variables declared inside of the 'all' selector below */
 *{
   --AppFont: arial;
   --UIThemeFontColor: #1976D2;
-  --UIMainColor: #1976D2;
+  --UIMainColor: #2980b9;
   --UICompMainColor: #BBDEFB;
   --UIThemeFontCompColor: white;
 }
@@ -20,5 +20,5 @@ body {
 .appDiv {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
 }
