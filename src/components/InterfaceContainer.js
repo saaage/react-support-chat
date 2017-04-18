@@ -25,6 +25,7 @@ class InterfaceContainer extends React.Component {
       user: null
     };
     this.signIn = this.signIn.bind(this);
+    this.signOut = this.signOut.bind(this);
   }
 
   signIn() {
@@ -34,6 +35,13 @@ class InterfaceContainer extends React.Component {
     });
   }
 
+  signOut() {
+    this.setState({
+      loggedIn: false,
+      user: null
+    })
+  }
+
   render() {
 
     const isLoggedIn = this.state.loggedIn;
@@ -41,7 +49,7 @@ class InterfaceContainer extends React.Component {
     if(isLoggedIn){
       return(
         <div className={styles.interfaceContainer}>
-          <UserNavbar userObj={this.state.user} />
+          <UserNavbar userObj={this.state.user} onClick={this.signOut} />
           <Conversations />
           <ActiveConversation />
         </div>
