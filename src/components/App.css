@@ -8,9 +8,15 @@
   --UIThemeFontCompColor: white;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
 /* <body> */
-html,body {
-  height: 99%;
+body {
+  height: 100%;
+  margin: 0px;
 }
 
 body {

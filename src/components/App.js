@@ -1,5 +1,4 @@
 // App renders our components
-// App will have a boolean state of signedIn. If user is not signedIn, App will render a sign-in page. If signedIn, App will render the chat interface
 
 import React from 'react'
 

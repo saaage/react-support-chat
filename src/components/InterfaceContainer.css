@@ -2,4 +2,8 @@
 .interfaceContainer {
   display: flex;
   flex-flow: row wrap;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
