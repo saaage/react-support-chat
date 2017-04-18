@@ -6,18 +6,10 @@ import React from 'react'
 import InterfaceContainer from './InterfaceContainer'
 import styles from './App.css'
 
-let signedIn;
-
 class App extends React.Component {
 
-  signedIn: false
-
-  constructor(props) {
-    super(props);
-    this.state = signedIn;
-  }
-
   render() {
+
     return(
       <div className={styles.appDiv}>
         <InterfaceContainer />

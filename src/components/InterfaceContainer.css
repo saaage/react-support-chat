@@ -2,5 +2,4 @@
 .interfaceContainer {
   display: flex;
   flex-flow: row wrap;
-  /*flex: 18;*/
 }

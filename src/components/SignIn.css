@@ -1,0 +1,8 @@
+*{
+  --MidnightBlue: #2c3e50;
+}
+
+.main {
+  background-color: var(--MidnightBlue);
+  flex: 1 100%;
+}
